@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREECE X FLUID EDITOR</title>
+</head>
+<body>
+    <div id="edit">
+        print 'hello';
+        hello print me please ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        ;
+        print
+        print
+        print
+        print <br>
+        print;print
+
+    </div>
+</body>
+<script src="lwce.lib.js"></script>
+<script>
+    lwce_greece_x_fluid_mkconfig("'", "yellow");
+    lwce_greece_x_fluid_mkconfig("hello", "red");
+    lwce_greece_x_fluid_mkconfig("print", "red");
+    lwce_greece_x_fluid_make_editor('edit', LWCE_EDITOR_PERMISSION_WRITE);
+
+    lwce_greece_x_fluid_defconfig ();
+    lwce_greece_x_fluid_clconfig ("print");
+    lwce_greece_x_fluid_mkconfig("print", "blue");
+    console.log(lwce_greece_x_fluid_highlightables)
+    lwce_greece_x_fluid_make_editor('edit', LWCE_EDITOR_PERMISSION_WRITE);
+</script>
+</html>
